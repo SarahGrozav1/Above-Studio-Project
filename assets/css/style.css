@@ -1,0 +1,80 @@
+ @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Ysabeau:wght@100&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    background-color: #c4c5bc;
+}
+
+body {
+    font-family: Arapey, sans-serif;
+    font-weight: 300;
+    color: #422c1d;
+}
+
+/* heading and logo */
+
+h1, h2 {
+    font-family: Ysabeau, sans-serif;
+    text-transform: uppercase;
+    color: #422c1d;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+#logo {
+    float: left;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+#menu #logo {
+    line-height: 75px;
+}
+
+#menu #logo, em {
+    color: #fff;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 40px;
+    margin-top: 15px;
+    padding: 18px 20px;
+    
+}
+
+#menu a {
+    text-decoration: none;
+    color: #422c1d;
+}
+
+#menu a:hover{
+    border: 1px solid #422c1d;
+    background-color: #f0eeee;
+    font-size: 20px;
+    border: 20px solid transparent;
+}
+
+/* hero image and cover text */
+
+#hero-outer {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #422c1d;
+}
