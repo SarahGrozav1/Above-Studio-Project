@@ -5,21 +5,21 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
-    background-color: #c4c5bc;
+    background-color: #c2bcba;
 }
 
 body {
     font-family: Arapey, sans-serif;
     font-weight: 300;
-    color: #422c1d;
+    color: #191919;
 }
 
 /* heading and logo */
 
 h1, h2 {
-    font-family: Ysabeau, sans-serif;
+    font-family: Arapey, sans-serif;
     text-transform: uppercase;
-    color: #422c1d;
+    color: #191919;
     text-decoration: none;
     letter-spacing: 3px;
 }
@@ -28,53 +28,123 @@ h1, h2 {
     float: left;
     font-size: 25px;
     margin-left: 30px;
+    margin-top: 15px;
 }
 
 /* navigation links */
 
 #menu {
-    font-size: 19px;
     letter-spacing: 2px;
 }
 
-#menu #logo {
-    line-height: 75px;
-}
-
 #menu #logo, em {
-    color: #fff;
+    color: rgb(155, 0, 0);
+    font-family: Arapey, sans-serif;
 }
 
 #menu li {
     float: right;
     list-style-type: none;
     margin-right: 40px;
-    margin-top: 15px;
-    padding: 18px 20px;
-    
+    margin-top: 7px;
+    padding: 18px 20px;   
 }
 
 #menu a {
     text-decoration: none;
-    color: #422c1d;
+    color: #191919;
+    font-size: 20px;
+    transition: .2s ease background-color;
 }
 
 #menu a:hover{
     border: 1px solid #422c1d;
     background-color: #f0eeee;
-    font-size: 20px;
-    border: 20px solid transparent;
+    border: 16px solid transparent;
+    border-radius: 10px;
+    text-transform: uppercase;
 }
 
 /* hero image and cover text */
 
 #hero-outer {
-    height: 300px;
+    height: 850px;
     width: 100%;
     overflow: hidden;
+}
+
+#cover-text {
+    color: black;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 320px;
+    text-align: center;
+    padding: 70px;
+    margin-left: 100px;
+}
+
+
+
+h2 {
+    font-size: 30px;
+    padding: 10px;
+   padding-left: 10px;
+}
+
+
+h3 {
+    padding: 10px;
+    font-family: Ysabeau, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.address {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    letter-spacing: 2px;
+}
+
+h4{
+    font-family: Ysabeau, sans-serif;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#cover-text a {
+   display: inline-block;
+   color: rgb(155, 0, 0);
+   background-color: transparent;
+   margin: 10px;
+   padding: 15px;
+   border: 1px solid ;
+   font-size: 25px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 3px;
+   transition: .2s ease background-color;
+   border-radius: 15px;
+   transition-property: background-color;
+}
+
+#cover-text a:hover {
+    color: #c2bcba;
+    background-color: rgb(155, 0, 0);
+    border: none;
+}
+
+#hero-image {
+    height: 100%;
+    min-width: 500px;
+    background: url('../images/cover\ \(1\).jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-right: 30px;
     position: relative;
 }
 
-#cover-text, #cover-text h2 {
-    color: #422c1d;
-}
