@@ -4,14 +4,17 @@
     margin: 0;
     padding: 0;
     border: none;
-    box-sizing: border-box;
-    background-color: #c2bcba;
+    
 }
 
+html {
+    scroll-behavior: smooth;
+    background-color: #c2bcba;
+}
 body {
     font-family: Arapey, sans-serif;
     font-weight: 300;
-    color: #191919;
+    color: #000000;
 }
 
 /* heading and logo */
@@ -28,7 +31,7 @@ h1, h2 {
     float: left;
     font-size: 25px;
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 /* navigation links */
@@ -37,7 +40,11 @@ h1, h2 {
     letter-spacing: 2px;
 }
 
-#menu #logo, em {
+#logo {
+    font-family: Arapey, sans-serif;
+}
+
+#logo em {
     color: rgb(155, 0, 0);
     font-family: Arapey, sans-serif;
 }
@@ -46,7 +53,8 @@ h1, h2 {
     float: right;
     list-style-type: none;
     margin-right: 40px;
-    margin-top: 7px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     padding: 18px 20px;   
 }
 
@@ -54,7 +62,7 @@ h1, h2 {
     text-decoration: none;
     color: #191919;
     font-size: 20px;
-    transition: .2s ease background-color;
+    transition: .1s ease background-color;
 }
 
 #menu a:hover{
@@ -62,7 +70,6 @@ h1, h2 {
     background-color: #f0eeee;
     border: 16px solid transparent;
     border-radius: 10px;
-    text-transform: uppercase;
 }
 
 /* hero image and cover text */
@@ -84,11 +91,12 @@ h1, h2 {
     animation-name: slide;
     animation-duration: 4s;  
     animation-fill-mode: forwards;
+    
 }
 
 @keyframes slide {
-  from {margin-left: 5px; background-color: transparent;}
-  to {margin-left: 210px;}
+  from {margin-left: 0px; background-color: transparent;}
+  to {margin-left: 210px; background-color: transparent;}
 }
 
 
@@ -124,11 +132,10 @@ h4{
 
 #cover-text a {
    display: inline-block;
-   color: rgb(155, 0, 0);
-   background-color: transparent;
+   color: #c2bcba;
+   background-color: rgb(155, 0, 0);
    margin: 10px;
    padding: 15px;
-   border: 1px solid ;
    font-size: 25px;
    font-weight: bold;
    text-decoration: none;
@@ -141,20 +148,105 @@ h4{
 
 
 #cover-text a:hover {
-    color: #c2bcba;
-    background-color: rgb(155, 0, 0);
-    border: none;
+    color: rgb(155, 0, 0);
+    background-color: transparent;
+    border: 1px solid rgb(155, 0, 0);
 }
 
 #hero-image {
-    height: 100%;
-    min-width: 500px;
-    background: url('../images/cover\ \(1\).jpg');
+    height: 95%;
+    background: url('../images/background-cover.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
     margin-right: 30px;
     position: relative;
+    
+}
+
+/* about section */
+
+#about {
+    height: 850px;
+    width: 100%;
+    position: relative;
+    
 }
 
 
+#container {
+    letter-spacing: 3px;
+    margin-top: 70px;
+    margin-right: 550px;
+    text-align: right;
+}
+
+#container em {
+    color: rgb(155, 0, 0);
+}
+
+img {
+  margin-left: 280px;
+  float: left;
+  width: 400px;
+  border: 2px solid black;
+}
+
+p {
+  text-align: center;
+  padding: 90px;
+  margin-right: 185px;
+  float: right;
+  font-size: 25px;
+}
+
+#about a {
+   color: #c2bcba;
+   background-color: rgb(155, 0, 0);
+   padding: 15px;
+   font-size: 25px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 3px;
+   transition: .2s ease background-color;
+   border-radius: 15px;
+   position: absolute;
+   bottom: 250px;
+   right: 545px;
+}
+
+#about a:hover {
+color: rgb(155, 0, 0);
+background-color: transparent;
+border: 1px solid rgb(155, 0, 0);
+}
+
+/* about page */
+
+#ab-page {
+     height: 850px;
+     width: 100%;
+}
+
+#backg-image {
+    background-image: url(../images/about-page.jpg);
+    height: 800px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+}
+
+#ab-page .title {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 700px;
+    padding-top: 80px;
+}
+
+.about {
+    margin-right: 300px;
+}
+
+/* gallery section */
