@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     border: none;
-    
+    box-sizing: border-box;
 }
 
 html {
@@ -37,6 +37,7 @@ h1, h2 {
 /* navigation links */
 
 #menu {
+    
     letter-spacing: 2px;
 }
 
@@ -87,7 +88,6 @@ h1, h2 {
     top: 320px;
     text-align: center;
     padding-top: 100px;
-    margin-left: 210px;
     animation-name: slide;
     animation-duration: 4s;  
     animation-fill-mode: forwards;
@@ -161,7 +161,6 @@ h4{
     background-position: top right;
     margin-right: 30px;
     position: relative;
-    
 }
 
 /* about section */
@@ -170,7 +169,6 @@ h4{
     height: 850px;
     width: 100%;
     position: relative;
-    
 }
 
 
@@ -224,29 +222,214 @@ border: 1px solid rgb(155, 0, 0);
 /* about page */
 
 #ab-page {
-     height: 850px;
      width: 100%;
+     height: 100%;
 }
 
-#backg-image {
+#ab-page #backg-image {
     background-image: url(../images/about-page.jpg);
-    height: 800px;
-    width: 100%;
-    background-size: contain;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 100px;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
 }
 
-#ab-page .title {
-    text-align: center;
+#ab-page #backg-image-transparent {
+    position: absolute;
+    background-color: #000000b2;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
     font-size: 40px;
-    margin-left: 700px;
-    padding-top: 80px;
+    margin-top: 60px;
+    right: 200px;
+   color: #ffffff;
 }
 
-.about {
-    margin-right: 300px;
+ #design {
+    position: absolute;
+    top: 100px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 25px;
+    text-align: left;
 }
+
+#small-title {
+    position: absolute;
+    bottom: 400px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 27px;
+    text-align: left;
+    left: 80px;
+}
+
+#us {
+    position: absolute;
+    bottom: -50px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 25px;
+    text-align: left;
+    left: 0px;
+}
+
 
 /* gallery section */
+
+#gallery {
+    width: 100%;
+    height: 850px;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.title em {
+    color: rgb(155, 0, 0);
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    
+}
+
+.see-more  {
+   color: #c2bcba;
+   background-color: rgb(155, 0, 0);
+   padding: 15px;
+   font-size: 25px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 3px;
+   transition: .2s ease background-color;
+   border-radius: 15px;
+   position: absolute;
+   bottom: -114rem;
+   right: 55rem;
+}
+
+.see-more:hover {
+    color: rgb(155, 0, 0);
+    background-color: transparent;
+    border: 1px solid rgb(155, 0, 0);
+}
+
+/* gallery page */
+
+#photos {
+    clear: left;
+    top: 200px;
+    column-count: 3;
+    position: relative;
+}
+
+div img {
+    position: absolute;
+}
+
+.photos {
+    position: absolute;
+    left: 770px;
+    top: 100px;
+}
+
+/* prices page */
+
+#prices {
+    width: 100%;
+    position: relative;
+}
+
+#prices #title {
+    position: absolute;
+    top: 170px;
+    right: 550px;
+    padding-bottom: 170px;
+    color: rgb(0, 0, 0);
+}
+
+#prices div {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    background-image: linear-gradient(to right, #acac9c ,#c8a797 );
+    width: 20%;
+    height: 115rem;
+    text-align: center;
+    border:  1px solid rgb(0, 0, 0);
+    font-family: Ysabeau, sans-serif;
+    letter-spacing: 4px;
+    top: 350px;
+    margin-bottom: 40px;
+    position: absolute;
+}
+
+#prices .left-row {
+    left: 200px;
+}
+
+#prices .center-row {
+    left: 755px;
+}
+
+#prices .right-row {
+    right: 200px;
+}
+
+#prices .row {
+    font-family: Arapey, sans-serif;
+    font-size: 23px;
+    padding-top: 40px;
+}
+
+#prices .price {
+    font-family: Arapey;
+    font-size: 19px;
+}
+
+#prices p {
+    position: relative;
+    left: 175px;
+    padding-top: 40px;
+    text-align: left;
+    letter-spacing: 3px;
+    font-family: Arapey, sans-serif;
+    font-size: 23px;
+}
+
+#prices a {
+   color: #c2bcba;
+   background-color: rgb(155, 0, 0);
+   padding: 15px;
+   font-size: 25px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 3px;
+   transition: .2s ease background-color;
+   border-radius: 15px;
+   position: absolute;
+   top: 250px;
+   right: 56rem;
+   
+}
+
+#prices a:hover {
+    color: rgb(155, 0, 0);
+    background-color: transparent;
+    border: 1px solid rgb(155, 0, 0);
+}
